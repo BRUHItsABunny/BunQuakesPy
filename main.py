@@ -22,10 +22,6 @@ def get_date(date_str: str):
     return day, month, year
 
 
-def calculate_average():
-    pass
-
-
 def main():
 
     filename = "earthquakes.txt"
