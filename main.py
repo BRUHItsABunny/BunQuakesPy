@@ -47,6 +47,8 @@ def main():
         "\nSep", "Oct", "\nNov", "Dec"
     ])
 
+    fig = plt.figure()
+    fig.set_size_inches(8, 10, forward=True)
     for year in fast_lookup.keys():
         averages = np.empty(shape=1, dtype=float)
         for month in range(1, 12):
@@ -57,6 +59,7 @@ def main():
             # print("Dividing %f by %f" % (month_magnitude, month_count))
             averages = np.append(arr=averages, values=[(month_magnitude / month_count)], axis=0)
         plt.subplot(3, 2, plot_number)
+        plt.yticks(np.arange(0, 8, 1))
         plt.plot(np_months, averages, "ro")
         plt.title("Average Magnitude 19%i" % year)
         plot_number += 1
