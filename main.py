@@ -1,6 +1,6 @@
 ###########################################################
 # Author: BRUHItsABunny                                   #
-# Bunnystyle version of github.com/maximilionis/pure_aids #
+# Bunnystyle version of github.com/maximilionis/muwa      #
 ###########################################################
 import numpy as np
 import matplotlib.pyplot as plt
